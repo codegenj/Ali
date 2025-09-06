@@ -1,0 +1,19 @@
+{
+  "name": "domain-scout/cli",
+  "description": "Domain availability and drop time scout CLI",
+  "type": "project",
+  "require": {
+    "php": ">=8.0",
+    "symfony/console": "^6.4 || ^7.0",
+    "guzzlehttp/guzzle": "^7.8",
+    "mtdowling/cron-expression": "^1.2 || ^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "DomainScout\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/domainscout"
+  ]
+}
