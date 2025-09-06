@@ -1,0 +1,51 @@
+{
+	"tlds": {
+		"com": {
+			"whois": "whois.verisign-grs.com",
+			"available_phrases": ["No match for"],
+			"available_regexes": ["/No match for/i"],
+			"expiry_regexes": ["/Registry Expiry Date:\\s*(.+)/i", "/Expiration Date:\\s*(.+)/i"],
+			"created_regexes": ["/Creation Date:\\s*(.+)/i"],
+			"status_regexes": ["/^Domain Status:\\s*(.+)$/im"]
+		},
+		"net": {
+			"whois": "whois.verisign-grs.com",
+			"available_phrases": ["No match for"],
+			"available_regexes": ["/No match for/i"],
+			"expiry_regexes": ["/Registry Expiry Date:\\s*(.+)/i", "/Expiration Date:\\s*(.+)/i"],
+			"created_regexes": ["/Creation Date:\\s*(.+)/i"],
+			"status_regexes": ["/^Domain Status:\\s*(.+)$/im"]
+		},
+		"org": {
+			"whois": "whois.pir.org",
+			"available_phrases": ["NOT FOUND", "Not found"],
+			"available_regexes": ["/NOT FOUND/i"],
+			"expiry_regexes": ["/Registry Expiry Date:\\s*(.+)/i", "/Expiry Date:\\s*(.+)/i"],
+			"created_regexes": ["/Creation Date:\\s*(.+)/i"],
+			"status_regexes": ["/^Domain Status:\\s*(.+)$/im"]
+		},
+		"com.tr": {
+			"whois": "whois.trabis.gov.tr",
+			"available_phrases": ["No match found", "Bulunamadı", "Not found"],
+			"available_regexes": ["/No match/i", "/Bulunamad[ıi]/i", "/Not found/i"],
+			"expiry_regexes": ["/Expires on:\\s*(.+)/i", "/Expiration Date:\\s*(.+)/i", "/Expiry Date:\\s*(.+)/i"],
+			"created_regexes": ["/Created on:\\s*(.+)/i", "/Creation Date:\\s*(.+)/i"],
+			"status_regexes": ["/^Status:\\s*(.+)$/im", "^Domain Status:\\s*(.+)$"]
+		}
+	},
+	"drop_windows": {
+		"default": { "start": "14:00", "end": "15:00" },
+		"com": { "start": "14:00", "end": "15:00" },
+		"net": { "start": "14:00", "end": "15:00" },
+		"org": { "start": "14:00", "end": "15:00" },
+		"com.tr": { "start": "07:00", "end": "10:00" }
+	},
+	"lifecycle_days": {
+		"default": { "auto_renew_grace": 0, "redemption": 30, "pending_delete": 5 },
+		"com": { "auto_renew_grace": 0, "redemption": 30, "pending_delete": 5 },
+		"net": { "auto_renew_grace": 0, "redemption": 30, "pending_delete": 5 },
+		"org": { "auto_renew_grace": 0, "redemption": 30, "pending_delete": 5 },
+		"com.tr": { "auto_renew_grace": 0, "redemption": 30, "pending_delete": 5 }
+	}
+}
+
