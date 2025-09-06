@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+if (!file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    fwrite(STDERR, "Dependencies not installed. Run 'composer install' in the project root.\n");
+    exit(1);
+}
+require __DIR__ . '/../vendor/autoload.php';
+
+use DomainScout\CLI\ApplicationFactory;
+
+$application = ApplicationFactory::create();
+$application->run();
